@@ -16,14 +16,14 @@ function calculateAnimations() {
     /* animate Cs */
     { range: [-1, fin * 0.5],   selector: '.D', type: 'scale', style: 'transform:translateY', from: 0, to: 25, unit: 'px' },
     { range: [fin * 0.5, fin],  selector: '.D', type: 'scale', style: 'transform:translateY', from: 25, to: 0, unit: 'px' },
-    { range: [fin * 0.4, fin],  selector: '.D', type: 'change', style: 'color', to: '#ffb515' },
+    { range: [fin * 0.4, fin],  selector: '.D', type: 'change', style: 'color', to: '#B22222' },
 
     /* animate Hs */
     { range: [-1, fin * 0.5],   selector: '.a', type: 'scale', style: 'transform:scaleX', from: 1, to: 0.5 },
     { range: [-1, fin * 0.5],   selector: '.a', type: 'scale', style: 'transform:scaleY', from: 1, to: 0.5 },
     { range: [fin * 0.5, fin],  selector: '.a', type: 'scale', style: 'transform:scaleX', from: 0.5, to: 1 },
     { range: [fin * 0.5, fin],  selector: '.a', type: 'scale', style: 'transform:scaleY', from: 0.5, to: 1 },
-    { range: [fin * 0.3, fin],  selector: '.a', type: 'change', style: 'color', to: '#1fd1ec' },
+    { range: [fin * 0.3, fin],  selector: '.a', type: 'change', style: 'color', to: 'black' },
 
     /* animate Os */
     { range: [fin * 0.1, fin],  selector: '.v', type: 'randomizeColor' },
@@ -31,24 +31,29 @@ function calculateAnimations() {
     /* animate Rs */
     { range: [-1, fin * 0.5],   selector: '.i', type: 'scale', style: 'transform:rotateX', from: 0, to: 90, unit: 'deg' },
     { range: [fin * 0.5, fin],  selector: '.i', type: 'scale', style: 'transform:rotateX', from: 90, to: 0, unit: 'deg' },
-    { range: [fin * 0.3, fin],  selector: '.i', type: 'change', style: 'color', to: '#8382f9' },
+    { range: [fin * 0.3, fin],  selector: '.i', type: 'change', style: 'color', to: '#96281B' },
 
     /* animate Es */
-    { range: [fin * 0.3, fin],  selector: '.d', type: 'change', style: 'color', to: '#ff1b9b' },
+    { range: [fin * 0.3, fin],  selector: '.d', type: 'change', style: 'color', to: 'black' },
 
     /* animate Gs */
-    { range: [-1, fin * 0.5],   selectors: ['.B', '.o'], type: 'scale', style: 'transform:rotateZ', from: 0, to: 180, unit: 'deg' },
-    { range: [fin * 0.5, fin],  selectors: ['.B', '.o'], type: 'scale', style: 'transform:rotateZ', from: 180, to: 360, unit: 'deg' },
-    { range: [fin * 0.4, fin],  selectors: ['.B', '.o'], type: 'change', style: 'color', to: '#ff8b1c' },
+    { range: [-1, fin * 0.5],   selectors: ['.B'], type: 'scale', style: 'transform:rotateZ', from: 0, to: 180, unit: 'deg' },
+    { range: [fin * 0.5, fin],  selectors: ['.B'], type: 'scale', style: 'transform:rotateZ', from: 180, to: 360, unit: 'deg' },
+    { range: [fin * 0.4, fin],  selectors: ['.B'], type: 'change', style: 'color', to: '#96281B' },
+
+    /* animate Gs */
+    { range: [-1, fin * 0.5],   selectors: ['.o'], type: 'scale', style: 'transform:rotateZ', from: 0, to: 180, unit: 'deg' },
+    { range: [fin * 0.5, fin],  selectors: ['.o'], type: 'scale', style: 'transform:rotateZ', from: 180, to: 360, unit: 'deg' },
+    { range: [fin * 0.4, fin],  selectors: ['.o'], type: 'change', style: 'color', to: 'black' },
 
     /* animate As */
     { range: [-1, fin * 0.5],   selectors: ['.w', '.i'], type: 'scale', style: 'transform:rotateZ', from: 0, to: -180, unit: 'deg' },
     { range: [fin * 0.5, fin],  selectors: ['.w', '.i'], type: 'scale', style: 'transform:rotateZ', from: -180, to: -360, unit: 'deg' },
-    { range: [fin * 0.4, fin],  selectors: ['.w', '.i'], type: 'change', style: 'color', to: '#c05bdb' },
+    { range: [fin * 0.4, fin],  selectors: ['.w', '.i'], type: 'change', style: 'color', to: 'black' },
 
     /* animate Ps */
     { range: [-1, fin * 0.5],   selectors: ['.e'], type: 'scale', style: 'opacity', from: 1, to: 0.1 },
-    { range: [fin * 0.4, fin],  selectors: ['.e'], type: 'change', style: 'color', to: '#ff537c' },
+    { range: [fin * 0.4, fin],  selectors: ['.e'], type: 'change', style: 'color', to: 'black' },
     { range: [fin * 0.5, fin],  selectors: ['.e'], type: 'scale', style: 'opacity', from: 0.1, to: 1 },
 
     /* animate line */
